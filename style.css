@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    font-family: 'Karla', sans-serif;
+}
+
+.app {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    justify-content: space-around;
+    overflow: scroll;
+}
+
+.app > h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.app > span {
+    font-size: 4rem;
+}
+
+.game-desc {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: -0.03em;
+    color: #4A4E74;
+}
+
+.dice-grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 20%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.die {
+    width: 5rem;
+    height: 5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-basis: 15%;
+    margin: 20px;
+}
+
+.held {
+    background: #59E391;
+}
+
+.die-num {
+    font-size: 3rem;
+}
+
+.roll-dice {
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    height: 5rem;
+    margin-top: 5%;
+    font-size: 2rem;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 3.81277px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
